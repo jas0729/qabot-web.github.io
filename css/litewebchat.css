@@ -133,7 +133,7 @@
 .lite-chatbox .cright .content{
   margin: 0 48px 0 0;
   -webkit-border-radius: 20px 0 20px 20px;
-  border-radius: 20px 0 20px 20px;
+  border-radius: 10px 0 10px 10px;
   color: white;
   /* border: 1px solid #78cdf8; */
   background: -webkit-linear-gradient(70deg, #3FD1E1 0%, #44D7CD 100%);
@@ -144,8 +144,8 @@
 .lite-chatbox .cleft .content{
   margin: 0 0 0 48px;
   -webkit-border-radius: 0 20px 20px 20px;
-  border-radius: 0 20px 20px 20px;
-  color: #666;
+  border-radius: 0 10px 10px 10px;
+  color: white;
   border: 1px solid rgba(0, 0, 0, 0.05);
   background: #FFFFFF;
   -webkit-box-shadow: 5px 5px 15px 0 rgba(102,102,102,0.1);

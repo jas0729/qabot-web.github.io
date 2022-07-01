@@ -35,7 +35,7 @@ var app = new Vue({
 				word = words[Math.floor(Math.random() * words.length)];
 				list = this.thesaurus[word];
 			} else {
-				list = ["唔，没有搞懂主人在说什么诶", "没有听懂qwq", "虽然不知道在说什么，但感觉很厉害的样子~", "我是不是太笨啦，没理解主人什么意思qaq"]
+				list = ["滚", "sb", "虽然不知道在说什么，但感觉很厉害的样子~", "我是不是太笨啦，没理解主人什么意思qaq"]
 			}
 			reply = list[Math.floor(Math.random() * list.length)];
 			this.messageList.push({
