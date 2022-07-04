@@ -36,10 +36,10 @@ main::-webkit-scrollbar {
 	border: 1px solid #efefef;
 	background-color: #FFFFFD;
 	background-image: url(../img/avatar/D.PNG);
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
-}
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;}
 
-	::before
+
+	::before{}
 	::after {
 		content: '';
 		z-index: -1;
@@ -53,7 +53,6 @@ main::-webkit-scrollbar {
 		transform: skew(-15deg) rotate(-4deg);
 	}
 
-
 	::after {
 		left: auto;
 		right: 10px;
@@ -61,11 +60,17 @@ main::-webkit-scrollbar {
 	}
 
 
+
 .inputBox {
 	position: absolute;
 	bottom: 1vh;
 	left: auto;
 	right: auto;
+	height: 40px;
 	width: 100%;
 	z-index: 999;
 }
+
+/* .lite-chatbox{
+	height: calc(75vh);
+} */
