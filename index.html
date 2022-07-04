@@ -11,14 +11,12 @@
 		<!-- 引入组件库 -->
 		<script src="https://unpkg.com/element-ui/lib/index.js"></script>
 		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
 
-<!--今天尝试了Gitee和Github的镜像管理-->
 	</head>
 		<body>
 			<el-container id="app" class="paper">
 				<el-header>
-				<div class="app-title">你的朋友小BIN</div>
+				<div class="app-title">你的朋友{{botNick}}</div>
 				</el-header>
 				<el-main>
 					<!-- 主容器 -->
@@ -49,8 +47,7 @@
 				</el-main>
 				
 			</el-container>
-			<el-row><div class="powered">Powered by <a href="https://github.com/Fzoss/MoeChat">MoeChat</a></div></el-row>
-		</body>
+				</body>
 		
 		<script type="text/javascript">
 			var app = new Vue({
@@ -59,7 +56,7 @@
 					return {
 						messageList: [],
 						inputBox: '',
-						botNick: '',
+						botNick: '小BIN',
 						thesaurus: '',
 						botAvatar: 'C.png',
 						myAvatar: 'B.jpg'
@@ -90,7 +87,7 @@
 							word = words[Math.floor(Math.random() * words.length)];
 							list = this.thesaurus[word];
 						} else {
-							list = ["滚", "没有听懂qwq", "虽然不知道在说什么，但感觉很厉害的样子~", "我是不是太笨啦，没理解主人什么意思qaq"]
+							list = ["一边去"]
 						}
 						reply = list[Math.floor(Math.random() * list.length)];
 						this.messageList.push({
