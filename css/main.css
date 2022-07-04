@@ -36,13 +36,11 @@ main::-webkit-scrollbar {
 	border: 1px solid #efefef;
 	background-color: #FFFFFD;
 	background-image: url(../img/avatar/D.PNG);
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;}
 
 /*改了一下这里的报错*/
 
-::before {
-}
-
+::before
 ::after {
 	content: '';
 	z-index: -1;
@@ -62,7 +60,7 @@ main::-webkit-scrollbar {
 	transform: skew(15deg) rotate(4deg);
 }
 
-}
+
 
 .inputBox {
 	position: absolute;
