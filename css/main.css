@@ -1,5 +1,5 @@
 #app {
-	max-width: 500px;
+	max-width: 400px;
 
 }
 
@@ -15,7 +15,9 @@ main::-webkit-scrollbar {
 	margin-top: -0.25rem;
 }
 
-
+.el-herder{
+	background: #0072C1;
+}
 .app-title {
 	text-align: center;
 	color: transparent;
@@ -35,7 +37,7 @@ main::-webkit-scrollbar {
 	padding: 30px 0;
 	border: 1px solid #efefef;
 	background-color: #FFFFFD;
-	background-image: url(../img/avatar/D.PNG);
+	background-image: url(../img/avatar/back.jpg);
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;}
 
 /*改了一下这里的报错*/

@@ -49,7 +49,7 @@
 				</el-main>
 				
 			</el-container>
-			<el-row><div class="powered">Powered by <a href="https://github.com/Fzoss/MoeChat">MoeChat</a></div></el-row>
+
 		</body>
 		
 		<script type="text/javascript">
@@ -59,12 +59,12 @@
 					return {
 						messageList: [],
 						inputBox: '',
-						botNick: '',
+						botNick: '小BIN',
 						thesaurus: '',
-						botAvatar: 'C.png',
+						botAvatar: 'A.jpg',
 						myAvatar: 'B.jpg'
 					}
-			
+
 				},
 				methods: {
 					getThesaurus: function() {
@@ -85,12 +85,12 @@
 								words.push(obj);
 							}
 						}
-			
+
 						if (words.length != 0) {
 							word = words[Math.floor(Math.random() * words.length)];
 							list = this.thesaurus[word];
 						} else {
-							list = ["滚", "没有听懂qwq", "虽然不知道在说什么，但感觉很厉害的样子~", "我是不是太笨啦，没理解主人什么意思qaq"]
+							list = ["没有听懂"]
 						}
 						reply = list[Math.floor(Math.random() * list.length)];
 						this.messageList.push({
@@ -117,5 +117,5 @@
 				}
 			});
 		</script>
-	</body>
+
 </html>
